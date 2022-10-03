@@ -1,0 +1,24 @@
+@mixin list($jc, $ai, $fd, $fw, $d, $gap) {
+  display: $d;
+  gap: $gap;
+  justify-content: $jc;
+  align-items: $ai;
+  flex-direction: $fd;
+  flex-wrap: $fw;
+}
+
+@mixin item($q-gap, $gap, $q-item) {
+  flex-basis: calc((100% - #{$q-gap} * #{$gap}) / #{$q-item});
+}
+
+@mixin section($pt, $pb, $bgc) {
+  padding-top: $pt;
+  padding-bottom: $pb;
+  background-color: $bgc;
+}
+
+@mixin flex($d, $jc, $ai) {
+  display: $d;
+  justify-content: $jc;
+  align-items: $ai;
+}
