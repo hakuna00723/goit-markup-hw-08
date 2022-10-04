@@ -232,51 +232,8 @@ img {
 }
 
 .features {
-  padding-top: 94px;
-  padding-bottom: 94px;
-}
-
-.features__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 30px;
-}
-
-.features__list-item {
-  width: 270px;
-}
-
-.features__bg-box {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 120px;
-  background: var(--grey-background-cl);
-  border-radius: 4px;
-  margin-bottom: 30px;
-}
-
-.features__title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.1428571429;
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
-}
-
-.features__subtitle {
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-cl);
+  padding-top: 60px;
+  padding-bottom: 60px;
 }
 
 .function {

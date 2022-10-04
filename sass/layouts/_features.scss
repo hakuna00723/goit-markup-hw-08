@@ -1,37 +1,37 @@
 .features {
-  @include section(94px, 94px, null);
+  @include section(60px, 60px, null);
 }
 
 .features__list {
-  display: flex;
-  gap: 30px;
+  // display: flex;
+  // gap: 30px;
 }
 
 .features__list-item {
-  width: 270px;
+  // width: 270px;
 }
 
 .features__bg-box {
-  @include flex(flex, center, center);
-  height: 120px;
-  background: var(--grey-background-cl);
-  border-radius: 4px;
+  // @include flex(flex, center, center);
+  // height: 120px;
+  // background: var(--grey-background-cl);
+  // border-radius: 4px;
 
-  margin-bottom: 30px;
+  // margin-bottom: 30px;
 }
 
 .features__title {
-  margin-bottom: 10px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
-  text-transform: uppercase;
+  // margin-bottom: 10px;
+  // font-weight: 700;
+  // font-size: 14px;
+  // line-height: calc(16 / 14);
+  // letter-spacing: 0.03em;
+  // text-transform: uppercase;
 }
 
 .features__subtitle {
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
-  color: var(--secondary-txt-cl);
+  // font-size: 14px;
+  // line-height: calc(24 / 14);
+  // letter-spacing: 0.03em;
+  // color: var(--secondary-txt-cl);
 }
