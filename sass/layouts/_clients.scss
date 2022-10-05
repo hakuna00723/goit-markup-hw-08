@@ -1,21 +1,43 @@
 .clients {
-  @include section(94px, 94px, null);
+  @include section(60px, 60px, null);
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);
+  }
 }
 .clients__title {
   font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: calc(33 / 36);
   text-align: center;
   letter-spacing: 0.03em;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
 }
+
 .clients__list {
-  @include list(center, center, null, null, flex, var(--gap));
+  @include list(center, center, null, wrap, flex, var(--gap));
+  // @media screen and (min-width: 1200px) {
+  //   @include list(center, center, null, null, flex, var(--gap));
+  // }
 }
 
 .clients__list-item {
-  @include item(5, var(--gap), 6);
   height: 92px;
+  @include item(1, var(--gap), 2);
+
+  @media screen and (min-width: 768px) {
+    @include item(2, var(--gap), 3);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @include item(5, var(--gap), 6);
+  }
 }
 
 .clients__link {

@@ -1,10 +1,10 @@
 @mixin list($jc, $ai, $fd, $fw, $d, $gap) {
-  display: $d;
-  gap: $gap;
   justify-content: $jc;
   align-items: $ai;
   flex-direction: $fd;
   flex-wrap: $fw;
+  display: $d;
+  gap: $gap;
 }
 
 @mixin item($q-gap, $gap, $q-item) {
