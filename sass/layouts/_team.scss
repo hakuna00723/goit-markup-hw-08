@@ -1,20 +1,28 @@
 .team {
-  @include section(94px, 94px, var(--grey-background-cl));
+  @include section(60px, 60px, var(--grey-background-cl));
+
+  @media screen and (min-width: 1200px) {
+    @include section(94px, 94px, null);
+  }
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: calc(42 / 36);
+  font-size: 28px;
+  line-height: calc(33 / 28);
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 36px;
+    line-height: calc(42 / 36);
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
-  display: flex;
-  gap: 30px;
+  @include list(center, center, null, wrap, flex, var(--gap));
 }
 
 .team__item {
@@ -26,7 +34,11 @@
 }
 
 .team__info {
-  padding: 30px;
+  padding: 30px 30px 24px 30px;
+
+  @media screen and (min-width: 1200px) {
+    padding: 30px;
+  }
 }
 
 .team__name {

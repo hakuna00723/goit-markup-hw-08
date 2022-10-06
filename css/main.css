@@ -186,8 +186,8 @@ img {
   max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
   background-color: var(--secondary-background-cl);
   background-image: -webkit-gradient(linear, left top, right top, from(var(--shadow-background)), to(var(--shadow-background))), url(../images/hero/hero-bcgr.jpg);
   background-image: linear-gradient(to right, var(--shadow-background), var(--shadow-background)), url(../images/hero/hero-bcgr.jpg);
@@ -196,22 +196,36 @@ img {
   background-size: cover;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+}
 
 .hero__title {
-  width: 696px;
+  width: 360px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.3636363636;
+  font-size: 26px;
+  line-height: 1.6153846154;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--light-txt-cl);
 }
+@media screen and (min-width: 1200px) {
+  .hero__title {
+    width: 696px;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.3636363636;
+  }
+}
 
 .hero__btn {
-  min-width: 216px;
+  min-width: 200px;
   min-height: 50px;
   padding: 10px;
   font-family: inherit;
@@ -226,6 +240,11 @@ img {
   border-radius: 4px;
   -webkit-transition: background-color var(--animation);
   transition: background-color var(--animation);
+}
+@media screen and (min-width: 1200px) {
+  .hero__btn {
+    min-width: 216px;
+  }
 }
 .hero__btn:hover, .hero__btn:focus {
   background-color: var(--dark-blue-cl);
@@ -244,12 +263,15 @@ img {
 
 @media screen and (min-width: 768px) {
   .features__list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    gap: 30px;
+    gap: var(--gap);
   }
 }
 
@@ -281,13 +303,12 @@ img {
 }
 
 .features__title {
-  margin-bottom: 10px;
-  font-weight: 700;
   font-size: 14px;
   line-height: 1.1428571429;
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 10px;
 }
 @media screen and (min-width: 768px) {
   .features__title {
@@ -361,26 +382,46 @@ img {
 }
 
 .team {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: var(--grey-background-cl);
+}
+@media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .team__title {
-  margin-bottom: 50px;
-  font-weight: 700;
-  font-size: 36px;
-  line-height: 1.1666666667;
+  font-size: 28px;
+  line-height: 1.1785714286;
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--main-txt-cl);
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__title {
+    font-size: 36px;
+    line-height: 1.1666666667;
+    margin-bottom: 50px;
+  }
 }
 
 .team__list {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 30px;
+  gap: var(--gap);
 }
 
 .team__item {
@@ -392,7 +433,12 @@ img {
 }
 
 .team__info {
-  padding: 30px;
+  padding: 30px 30px 24px 30px;
+}
+@media screen and (min-width: 1200px) {
+  .team__info {
+    padding: 30px;
+  }
 }
 
 .team__name {
@@ -453,7 +499,6 @@ img {
 }
 
 .clients__title {
-  font-weight: 700;
   font-size: 28px;
   line-height: 0.9166666667;
   text-align: center;
