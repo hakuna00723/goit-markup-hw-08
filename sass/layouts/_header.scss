@@ -8,12 +8,17 @@
 
 .header__container {
   display: flex;
+  align-items: center;
 }
 
 .header__logo {
   padding-top: 24px;
   padding-bottom: 24px;
-  margin-right: 93px;
+  margin-right: 87px;
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 92px;
+  }
 }
 
 /* main navigation */
@@ -22,6 +27,9 @@
 }
 
 .nav__list {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
   display: flex;
   gap: 50px;
 }
@@ -61,20 +69,36 @@
 
 /* header contact */
 .header-contact {
+  @media screen and (max-width: 767.5px) {
+    display: none;
+  }
+
   display: flex;
-  gap: 50px;
   color: var(--secondary-txt-cl);
+
+  @media screen and (min-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-direction: row;
+    gap: 50px;
+  }
 }
 
 .header-contact__link {
   position: relative;
   display: flex;
-  padding-top: 32px;
-  padding-bottom: 31px;
   align-items: center;
   gap: 10px;
 
   transition: color var(--animation);
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 32px;
+    padding-bottom: 31px;
+  }
 
   &:hover,
   &:focus {
