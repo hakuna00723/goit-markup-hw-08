@@ -624,13 +624,6 @@ img {
 }
 
 /* Radio Buttons */
-.btn {
-  border-radius: 4px;
-  padding: 6px 22px;
-  border-style: none;
-  min-height: 38px;
-}
-
 .gallery__btn-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -639,10 +632,35 @@ img {
       -ms-flex-pack: center;
           justify-content: center;
   gap: 8px;
-  margin-bottom: 50px;
+}
+@media screen and (max-width: 767.5px) {
+  .gallery__btn-list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    width: 326px;
+    row-gap: 15px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .gallery__btn-list {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__btn-list {
+    margin-bottom: 50px;
+  }
 }
 
 .btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-style: none;
+  min-height: 38px;
   font-family: inherit;
   font-weight: 500;
   font-size: 16px;
@@ -672,10 +690,35 @@ img {
       flex-wrap: wrap;
   gap: 30px;
 }
+@media screen and (max-width: 767.5px) {
+  .gallery__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
 
 .gallery__list-item {
-  -ms-flex-preferred-size: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
-      flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 0;
+}
+@media screen and (min-width: 768px) {
+  .gallery__list-item {
+    -ms-flex-preferred-size: calc((100% - 1 * var(--gap)) / 2);
+        flex-basis: calc((100% - 1 * var(--gap)) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .gallery__list-item {
+    -ms-flex-preferred-size: calc((100% - 2 * var(--gap)) / 3);
+        flex-basis: calc((100% - 2 * var(--gap)) / 3);
+  }
 }
 
 .gallery__link {
