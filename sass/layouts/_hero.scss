@@ -6,7 +6,41 @@
   padding-bottom: 118px;
   background-color: var(--secondary-background-cl);
   background-image: linear-gradient(to right, var(--shadow-background), var(--shadow-background)),
-    url(../images/hero/hero-bcgr.jpg);
+    url(../images/hero/hero_sm-@1x.jpg);
+
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background-image: linear-gradient(to right, var(--shadow-background), var(--shadow-background)),
+      url(../images/hero/hero_sm-@2x.jpg);
+  }
+
+  @media screen and (min-width: 481px) {
+    background-image: linear-gradient(to right, var(--shadow-background), var(--shadow-background)),
+      url(../images/hero/hero_md-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--shadow-background),
+          var(--shadow-background)
+        ),
+        url(../images/hero/hero_md-@2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 769px) {
+    background-image: linear-gradient(to right, var(--shadow-background), var(--shadow-background)),
+      url(../images/hero/hero_lg-@1x.jpg);
+
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background-image: linear-gradient(
+          to right,
+          var(--shadow-background),
+          var(--shadow-background)
+        ),
+        url(../images/hero/hero_lg-@2x.jpg);
+    }
+  }
+
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
