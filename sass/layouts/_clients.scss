@@ -21,9 +21,6 @@
 
 .clients__list {
   @include list(center, center, null, wrap, flex, var(--gap));
-  // @media screen and (min-width: 1200px) {
-  //   @include list(center, center, null, null, flex, var(--gap));
-  // }
 }
 
 .clients__list-item {
