@@ -82,7 +82,8 @@
 }
 
 .gallery__link {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
   cursor: pointer;
 
   transition: box-shadow var(--animation);
@@ -133,6 +134,7 @@
 }
 
 .gallery__txt {
+  flex-grow: 1;
   padding: 20px 24px;
   border: 1px solid var(--cards-brdr-cl);
   border-top: none;
